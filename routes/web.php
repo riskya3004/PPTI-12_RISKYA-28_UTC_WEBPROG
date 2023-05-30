@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookDetailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+// Route::get('/home', function () {
+//     return view('home');
+// });
+
+Route::get('/detail', function () {
+    return view('detail');
 });
+
+Route::get('/', [BookDetailController::class, 'viewbooks']);
+Route::get('/home', [BookDetailController::class, 'viewbooks']);
+
+Route::get('/detailbook/{id}', [BookDetailController::class, 'findbooksindex']);
+
+
+
+
