@@ -22,9 +22,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 
-Route::get('/detail', function () {
-    return view('detail');
-});
+// Route::get('/detail', function () {
+//     return view('detail');
+// });
 
 Route::get('/', [BookDetailController::class, 'viewbooks']);
 Route::get('/home', [BookDetailController::class, 'viewbooks']);
