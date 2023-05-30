@@ -14,4 +14,9 @@ class BookDetail extends Model
         return $this->hasOne(Book::class);
     }
 
+    public function Category () {
+
+        return $this->belongsTo(Category::class);
+    }
+
 }

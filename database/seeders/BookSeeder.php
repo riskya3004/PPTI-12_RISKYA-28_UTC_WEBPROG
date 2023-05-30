@@ -20,7 +20,7 @@ class BookSeeder extends Seeder
 
         for ($i=1; $i <=10 ; $i++) {
             Book::create([
-                'books_details_id' =>$i
+                'category_id' => mt_rand(1,3)
             ]);
         }
 

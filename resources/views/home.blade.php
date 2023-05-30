@@ -5,8 +5,8 @@
 @section('contain')
 
     <div class="container">
-        <div class="highlight-book-box" style="display:flex; border:1px solid red; heigth: 30px; margin-top: 10px">
-            <div class="highligt-book">
+        <div class="highlight-book-box" style="display:flex; border:1px solid red; heigth: 30px; margin-top: 10px; background-color: cyan">
+            <div class="highligt-book d-flex">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
@@ -15,8 +15,8 @@
                       <div class="col-md-8">
                         <div class="card-body">
                           <h5 class="card-title">IT Really Counts</h5>
-                          <p class="card-text">{{ $books->post_title }}</p>
-                          <p class="card-text"><small class="text-body-secondary">{{ $books->post_description }}</small></p>
+                          <p class="card-text" style="font-size:40px">{{ $books->post_title }}</p>
+                          <p class="card-text" style="font-size:40px"><small class="text-body-secondary">{{ $books->post_description }}</small></p>
                         </div>
                       </div>
                     </div>

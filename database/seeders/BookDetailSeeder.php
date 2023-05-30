@@ -21,7 +21,8 @@ class BookDetailSeeder extends Seeder
         for ($i=1; $i <=10 ; $i++) {
             BookDetail::create([
                 'post_title' => $faker->sentence(),
-                'categories_id' => mt_rand(1,3),
+                'books_id' => mt_rand(1,10),
+                'category_id' => mt_rand(1,3),
                 'author'=>$faker->sentence(),
                 'post_description' => $faker->sentence(),
                 'image' => 'image_post.jpg',
